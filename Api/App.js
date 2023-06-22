@@ -1,7 +1,7 @@
 // json-server --watch db.json
 import React, { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import AsyncStorage from '@react-native-community/async-storage';
+// import AsyncStorage from '@react-native-community/async-storage';
 
 export default function App() {
   const [lenderName, setLenderName] = useState('');
@@ -24,7 +24,7 @@ export default function App() {
   const getdata=async()=>{
     //api call
     // const url="https://jsonplaceholder.typicode.com/posts/1";
-    const url="http://localhost:3000/users";
+    const url="http://localhost:8080/transaction";
     let result= await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"}, body:JSON.stringify(ids)});
     result=await result.json();
     // console.log(result);
