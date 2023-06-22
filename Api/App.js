@@ -1,7 +1,7 @@
-
-
+// json-server --watch db.json
 import React, { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default function App() {
   const [lenderName, setLenderName] = useState('');
@@ -13,10 +13,10 @@ export default function App() {
   console.log(data)
 
   const ids={
-        lname:lenderName,
-        sname:receiverName,
-        amt:amount,
-        dt:date
+        lenderName,
+        receiverName,
+        amount,
+        date
   }
 
 

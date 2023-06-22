@@ -1,8 +1,8 @@
 {
   "users": {
-    "lname": "kush",
-    "sname": "hemal",
-    "amt": "2000",
-    "dt": "20/06/23"
+    "lenderName": "new ",
+    "receiverName": "test ",
+    "amount": "2000",
+    "date": "200623"
   }
 }
